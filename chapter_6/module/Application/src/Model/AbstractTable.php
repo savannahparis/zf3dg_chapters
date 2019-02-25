@@ -2,7 +2,8 @@
 namespace Application\Model;
 
 use Zend\Db\TableGateway\TableGateway;
-use Application\Model\Rowset\AbstractModel;
+//use Application\Model\Rowset\AbstractModel;
+use Application\Model\Rowset\UserModel;
 
 class AbstractTable
 {
@@ -13,7 +14,7 @@ class AbstractTable
          $this->tableGateway = $tableGateway;
     }
 
-    public function saveRow(AbstractModel $userModel, $data = null)
+    public function saveRow(User $userModel, $data = null)
     {
         $id = $userModel->getId();
         
