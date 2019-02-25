@@ -2,7 +2,7 @@
 namespace Application\Model;
 
 use Zend\Db\TableGateway\TableGateway;
-//use Application\Model\Rowset\AbstractModel;
+//use Application\Model\Rowset\AbstractModel;  // i think in error because this write just base_url
 use Application\Model\Rowset\UserModel;
 
 class AbstractTable
